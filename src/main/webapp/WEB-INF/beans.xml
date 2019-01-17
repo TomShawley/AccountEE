@@ -12,6 +12,6 @@
       
       
       <!-- <alternatives>
-        <class>com.qa.service.repository.AccountMapRepository</class>
+        <class>com.qa.repository.AccountMap</class>
     </alternatives> -->
 </beans>
