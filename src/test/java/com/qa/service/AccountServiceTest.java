@@ -11,14 +11,14 @@ import com.qa.util.JSONUtil;
 
 public class AccountServiceTest {
 
-	private AccountService service;
+	private AccountServiceImpl service;
 	private Account joeBloggs;
 	private Account janeBloggs;
 	private JSONUtil util;
 
 	@Before
 	public void setup() {
-		service = new AccountService();
+		service = new AccountServiceImpl();
 		joeBloggs = new Account("Joe", "Bloggs", "1234");
 		janeBloggs = new Account("Jane", "Bloggs", "1234");
 		util = new JSONUtil();

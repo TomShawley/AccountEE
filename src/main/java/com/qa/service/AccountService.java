@@ -1,40 +1,11 @@
 package com.qa.service;
 
-import java.util.HashMap;
-import java.util.Map;
+public interface AccountService {
 
-import com.qa.domain.Account;
+	String getAllAccounts();
 
-public class AccountService {
+	String addAccount(String account);
 
-	private Map<Integer, Account> accountMap;
-
-	private int count = 0;
-
-	public AccountService() {
-		accountMap = new HashMap<>();
-	}
-
-	public void addAccountFromMap(Account userAccount) {
-		accountMap.put(count, userAccount);
-		count++;
-	}
-
-	public void removeAccountFromMap(Integer accountToRemove) {
-		boolean countExists = accountMap.containsKey(accountToRemove);
-		if (countExists) {
-			accountMap.remove(accountToRemove);
-		}
-	}
-
-	public Map<Integer, Account> getAccountMap() {
-		return accountMap;
-	}
-
-	public int getNumberOfAccountWithFirstName( String firstNameOfAccount) {
-		return (int) accountMap.values().stream()
-				.filter(eachAccount -> eachAccount.getFirstName().equals(firstNameOfAccount)).count();
-	}
-	
+	String deleteAccount(Long id);
 
 }
