@@ -66,16 +66,6 @@ public class AccountDBRepositoryTest {
 		String reply = repo.deleteAccount(1L);
 		Assert.assertEquals(reply, "{\"message\": \"account sucessfully deleted\"}");
 	}
-	@Test
-	public void testFindAnAccount() {
-		fail("not yet implemented");
-		
-	}
-	@Test
-	public void testUpdateAccount() {
-		fail("not yet implemented");
-		
-	}
 
 }
 
