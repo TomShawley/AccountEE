@@ -62,7 +62,7 @@ public class AccountMap implements AccountInterface {
 	public String updateAnAccount(Long id) {
 		Account person = accounts.get(id);
 		person.setFirstName("Tom");
-		return "account updated";
+		return "Updated Account";
 	}
 
 }
